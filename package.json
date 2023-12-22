@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "prod": "cross-env NODE_ENV=production npm run build && node ./dist/app.js"
   },
   "keywords": [],
   "author": "",
